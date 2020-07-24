@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+/** ----------------- This is for responsive querys ----------------- 
+  * These querys are the same as the flex-layouts breakpoints.
+  * Media querys and names.
+  * 0 - 600px             Large Phone                phone
+  * 600 - 960px           Tablet portrait            tab-port
+  * 960 - 1280px          Tablet landscape           tab-land
+  * [1280 - 1920px]       [Normal styles]            [No changes]
+  * 1920px - 2560px       Full HD - 2K desktops      desktopL
+  * 2560px +              2K+ desktops               desktopXL
+  *  ----------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; }
+
+html {
+  /** If font-size given in px format Users won't able to change it in browser. Thats not good, so we have to give data in % format. 16px is the browser's default size, but we want 10px, so: 10/16 = 0.625 = 62.5% will be the best. Users can change it and it will keep responsibility. */
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 80em) {
+    html {
+      font-size: 58%; } }
+  @media only screen and (max-width: 60em) {
+    html {
+      font-size: 54%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Mukta", sans-serif; }
+
+.card-animation {
+  transition: all 0.2s; }
+  .card-animation:hover {
+    box-shadow: 0 1rem 1rem 1rem #4a4a4ab6; }
+
+/** ----------------- This is for responsive querys ----------------- 
+  * These querys are the same as the flex-layouts breakpoints.
+  * Media querys and names.
+  * 0 - 600px             Large Phone                phone
+  * 600 - 960px           Tablet portrait            tab-port
+  * 960 - 1280px          Tablet landscape           tab-land
+  * [1280 - 1920px]       [Normal styles]            [No changes]
+  * 1920px - 2560px       Full HD - 2K desktops      desktopL
+  * 2560px +              2K+ desktops               desktopXL
+  *  ----------------------------------------------------------------- */
+.container {
+  padding: 6rem;
+  width: 100%;
+  background-color: #f8f8f8; }
+  @media only screen and (max-width: 80em) {
+    .container {
+      padding: 5rem; } }
+  @media only screen and (max-width: 60em) {
+    .container {
+      padding: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      padding: 2rem; } }
+
+.card {
+  padding: 2rem;
+  font-size: 1.5rem; }
+  .card:not(:last-child) {
+    margin-bottom: 2rem; }
+  .card__title--sub {
+    color: #a8a8a8; }
+
+.divider__vertical {
+  width: 5rem;
+  border-bottom: 1px solid #e6e6e6; }
+
+.header {
+  font-family: "Yantramanav", sans-serif;
+  color: #ea5137;
+  font-weight: 500; }
+  .header--1 {
+    font-size: 3rem; }
+  .header--2 {
+    font-size: 2.5rem; }
+  .header--3 {
+    font-size: 2rem; }
+  .header--4 {
+    font-size: 1.5rem; }
+  .header--5 {
+    font-size: 1rem; }

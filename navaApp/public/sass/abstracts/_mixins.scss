@@ -1,0 +1,56 @@
+@mixin clearfix {
+   &:after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+}
+
+@mixin FullCentering {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/** ----------------- This is for responsive querys ----------------- 
+  * These querys are the same as the flex-layouts breakpoints.
+  * Media querys and names.
+  * 0 - 600px             Large Phone                phone
+  * 600 - 960px           Tablet portrait            tab-port
+  * 960 - 1280px          Tablet landscape           tab-land
+  * [1280 - 1920px]       [Normal styles]            [No changes]
+  * 1920px - 2560px       Full HD - 2K desktops      desktopL
+  * 2560px +              2K+ desktops               desktopXL
+  *  ----------------------------------------------------------------- */
+@mixin responsive($breakpoint) {
+   @if $breakpoint==phone {
+      @media only screen and (max-width: 37.5em) {
+         @content;
+      }
+   }
+
+   @if $breakpoint==tab-port {
+      @media only screen and (max-width: 60em) {
+         @content;
+      }
+   }
+
+   @if $breakpoint==tab-land {
+      @media only screen and (max-width: 80em) {
+         @content;
+      }
+   }
+
+   @if $breakpoint==desktopL {
+      @media only screen and (min-width: 120em) {
+         @content;
+      }
+   }
+
+   @if $breakpoint==desktopXL {
+      @media only screen and (min-width: 160em) {
+         @content;
+      }
+   }
+}

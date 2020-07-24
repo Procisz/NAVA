@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+// COLORS
+$default-background-color:#f8f8f8;
+$default-border-color:#e6e6e6;
+
+$color-primary: #ea5137;
+$color-primary-darken: darken(#ea5137, 5%);
+
+$color-grey-dark-2: #2e2e2e;
+$color-grey-dark-1: #3a3a3a;
+$color-grey: #4a4a4a;
+$color-grey-light-1: #a8a8a8;
+$color-grey-light-2: #e6e6e6;
+
+
+// FONTS
+$font-family-header: "Yantramanav",
+sans-serif;
+$font-family-text: 'Mukta',
+sans-serif;
+
+$default-font-size: 1.5rem;
+$font-size-header-1: 3rem;
+$font-size-header-2: 2.5rem;
+$font-size-header-3: 2rem;
+$font-size-header-4: 1.5rem;
+$font-size-header-5: 1rem;
+
+
+// BOX SHADOWS
+$default-box-shadow: #4a4a4a63;
+$default-box-shadow-hover: #4a4a4ab6;
+
+
+// TRANSITIONS
+$default-transition-duration: .2s;

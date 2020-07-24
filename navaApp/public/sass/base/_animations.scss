@@ -1,0 +1,9 @@
+@import "./../abstracts/variables";
+
+.card-animation {
+   transition: all $default-transition-duration;
+
+   &:hover {
+      box-shadow: 0 1rem 1rem 1rem $default-box-shadow-hover;
+   }
+}
