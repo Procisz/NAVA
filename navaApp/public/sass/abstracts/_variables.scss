@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 // COLORS
-$default-background-color:#f8f8f8;
+$default-background-color:rgba(48, 89, 204, .05);
 $default-border-color:#e6e6e6;
 
 $color-primary: #ea5137;
@@ -13,6 +13,8 @@ $color-grey-dark-1: #3a3a3a;
 $color-grey: #4a4a4a;
 $color-grey-light-1: #a8a8a8;
 $color-grey-light-2: #e6e6e6;
+
+$color-white: #fff;
 
 
 // FONTS
@@ -29,9 +31,10 @@ $font-size-header-4: 1.5rem;
 $font-size-header-5: 1rem;
 
 
-// BOX SHADOWS
+// BOX SHADOWS, BORDERS
 $default-box-shadow: #4a4a4a63;
 $default-box-shadow-hover: #4a4a4ab6;
+$default-border-radius: 3px;
 
 
 // TRANSITIONS

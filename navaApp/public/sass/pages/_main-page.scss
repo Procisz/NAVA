@@ -19,9 +19,11 @@
 }
 
 .card {
+   background-color: $color-white;
    padding: 2rem;
    font-size: $default-font-size;
-
+   border-radius: $default-border-radius;
+   border: 1px solid $default-border-color;
 
    &:not(:last-child) {
       margin-bottom: 2rem;

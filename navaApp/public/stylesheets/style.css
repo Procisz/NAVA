@@ -48,7 +48,7 @@ body {
 .card-animation {
   transition: all 0.2s; }
   .card-animation:hover {
-    box-shadow: 0 1rem 1rem 1rem #4a4a4ab6; }
+    box-shadow: 0 1rem 1rem #4a4a4ab6; }
 
 /** ----------------- This is for responsive querys ----------------- 
   * These querys are the same as the flex-layouts breakpoints.
@@ -63,7 +63,7 @@ body {
 .container {
   padding: 6rem;
   width: 100%;
-  background-color: #f8f8f8; }
+  background-color: rgba(48, 89, 204, 0.05); }
   @media only screen and (max-width: 80em) {
     .container {
       padding: 5rem; } }
@@ -75,8 +75,11 @@ body {
       padding: 2rem; } }
 
 .card {
+  background-color: #fff;
   padding: 2rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6; }
   .card:not(:last-child) {
     margin-bottom: 2rem; }
   .card__title--sub {
