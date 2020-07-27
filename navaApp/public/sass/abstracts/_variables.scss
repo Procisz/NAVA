@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 // COLORS
 $default-background-color:rgba(48, 89, 204, .05);
@@ -22,8 +23,10 @@ $font-family-header: "Yantramanav",
 sans-serif;
 $font-family-text: 'Mukta',
 sans-serif;
+$font-family-lato: 'Lato',
+sans-serif;
 
-$default-font-size: 1.5rem;
+$default-font-size: 1.6rem;
 $font-size-header-1: 3rem;
 $font-size-header-2: 2.5rem;
 $font-size-header-3: 2rem;

@@ -11,7 +11,6 @@
 }
 
 html {
-   /** If font-size given in px format Users won't able to change it in browser. Thats not good, so we have to give data in % format. 16px is the browser's default size, but we want 10px, so: 10/16 = 0.625 = 62.5% will be the best. Users can change it and it will keep responsibility. */
    font-size: 62.5%;
    box-sizing: border-box;
 
@@ -38,4 +37,6 @@ body {
    box-sizing: border-box;
    height: 100%;
    font-family: $font-family-text;
+   color: $color-grey;
+   font-size: $default-font-size;
 }

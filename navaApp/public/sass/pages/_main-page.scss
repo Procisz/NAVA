@@ -20,7 +20,7 @@
 
 .card {
    background-color: $color-white;
-   padding: 2rem;
+   padding: 3rem;
    font-size: $default-font-size;
    border-radius: $default-border-radius;
    border: 1px solid $default-border-color;
@@ -31,10 +31,29 @@
 
    &__title {
 
+      &--main {
+         text-align: center;
+      }
+
       &--sub {
          color: $color-grey-light-1;
+         margin-bottom: 1rem;
       }
    }
+
+   &__text {
+      color: $color-grey;
+      font-size: $default-font-size;
+      margin-bottom: 4rem;
+   }
+
+   &__funfacts {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 2rem 0;
+   }
+
 }
 
 .divider {

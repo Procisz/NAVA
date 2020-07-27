@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /** ----------------- This is for responsive querys ----------------- 
   * These querys are the same as the flex-layouts breakpoints.
   * Media querys and names.
@@ -12,10 +13,16 @@
   *  ----------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 *,
 *::after,
 *::before {
@@ -25,7 +32,6 @@
   font-family: inherit; }
 
 html {
-  /** If font-size given in px format Users won't able to change it in browser. Thats not good, so we have to give data in % format. 16px is the browser's default size, but we want 10px, so: 10/16 = 0.625 = 62.5% will be the best. Users can change it and it will keep responsibility. */
   font-size: 62.5%;
   box-sizing: border-box; }
   @media only screen and (max-width: 80em) {
@@ -43,12 +49,22 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: 100%;
-  font-family: "Mukta", sans-serif; }
+  font-family: "Mukta", sans-serif;
+  color: #4a4a4a;
+  font-size: 1.6rem; }
 
 .card-animation {
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01), 0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01); }
   .card-animation:hover {
-    box-shadow: 0 1rem 1rem #4a4a4ab6; }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02), 0 2px 4px rgba(0, 0, 0, 0.02), 0 4px 8px rgba(0, 0, 0, 0.02), 0 8px 16px rgba(0, 0, 0, 0.02), 0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02); }
+
+.funfact-box-animation {
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01), 0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01); }
+  .funfact-box-animation:hover {
+    transform: translateY(-0.1rem) scale(1.01);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02), 0 2px 4px rgba(0, 0, 0, 0.02), 0 4px 8px rgba(0, 0, 0, 0.02), 0 8px 16px rgba(0, 0, 0, 0.02), 0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02); }
 
 /** ----------------- This is for responsive querys ----------------- 
   * These querys are the same as the flex-layouts breakpoints.
@@ -76,14 +92,26 @@ body {
 
 .card {
   background-color: #fff;
-  padding: 2rem;
-  font-size: 1.5rem;
+  padding: 3rem;
+  font-size: 1.6rem;
   border-radius: 3px;
   border: 1px solid #e6e6e6; }
   .card:not(:last-child) {
     margin-bottom: 2rem; }
+  .card__title--main {
+    text-align: center; }
   .card__title--sub {
-    color: #a8a8a8; }
+    color: #a8a8a8;
+    margin-bottom: 1rem; }
+  .card__text {
+    color: #4a4a4a;
+    font-size: 1.6rem;
+    margin-bottom: 4rem; }
+  .card__funfacts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0; }
 
 .divider__vertical {
   width: 5rem;
@@ -103,3 +131,57 @@ body {
     font-size: 1.5rem; }
   .header--5 {
     font-size: 1rem; }
+
+.funfact-box {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: default;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01), 0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01); }
+  .funfact-box__side-left {
+    width: 13rem;
+    height: 10rem;
+    background-image: linear-gradient(to right bottom, #ea5137, #e83d20);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .funfact-box__side-right {
+    width: 22rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; }
+  .funfact-box__icon {
+    margin-bottom: 1rem; }
+  .funfact-box__number-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2); }
+  .funfact-box__number {
+    font-size: 3rem;
+    color: #ea5137;
+    font-family: "Lato", sans-serif; }
+  .funfact-box__text {
+    color: #4a4a4a;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    z-index: 2;
+    line-height: 1; }
+    .funfact-box__text--highlighted {
+      cursor: pointer;
+      color: #ea5137; }
