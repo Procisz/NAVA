@@ -133,11 +133,13 @@ body {
     font-size: 1rem; }
 
 .funfact-box {
+  min-height: 10rem;
   margin: 0 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
   position: relative;
   border: 1px solid #e6e6e6;
   border-radius: 7px;
@@ -145,8 +147,7 @@ body {
   cursor: default;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01), 0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01); }
   .funfact-box__side-left {
-    width: 13rem;
-    height: 10rem;
+    width: 10rem;
     background-image: linear-gradient(to right bottom, #ea5137, #e83d20);
     position: relative;
     display: flex;
@@ -154,7 +155,6 @@ body {
     align-items: center; }
   .funfact-box__side-right {
     width: 22rem;
-    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
