@@ -39,4 +39,32 @@ body {
    font-family: $font-family-text;
    color: $color-grey;
    font-size: $default-font-size;
+   background-color: $default-background-color;
+}
+
+/** ----- For selections ----- */
+::-moz-selection {
+   background-color: $color-secondary;
+   color: $color-white;
+}
+
+::selection {
+   background-color: $color-secondary;
+   color: $color-white;
+   font-weight: bold;
+}
+
+
+/** ----- General settings ----- */
+a,
+a:link,
+a:visited,
+button,
+button:link,
+button:visited {
+   text-decoration: none;
+}
+
+li {
+   list-style: none;
 }

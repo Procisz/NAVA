@@ -1,0 +1,26 @@
+@import "./../abstracts/variables";
+
+::-webkit-scrollbar {
+   width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   border-radius: 1rem;
+   background-color: $default-background-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: $color-secondary-lighten;
+   border-radius: 1rem;
+   cursor: pointer;
+   -webkit-transition: $default-transition-duration;
+   transition: $default-transition-duration;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: $color-secondary;
+   cursor: pointer;
+}

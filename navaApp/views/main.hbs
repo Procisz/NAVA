@@ -1,4 +1,5 @@
-<main class="container">
+<main class="container-fluid">
+   <div class="placeholder"></div>
    <section class="main-content">
       <div class="card card-animation">
          <div class="card__title">
@@ -52,14 +53,54 @@
                </div>
 
                <div class="funfact-box__side-right">
-                  <p class="funfact-box__text">A közmédia csatornáján
-                     <span class="funfact-box__text--highlighted">(M5)</span> oktatási célú és felhasználású tartalmakat
-                     sugároz.</p>
+                  <p class="funfact-box__text">A
+                     <span class="funfact-box__text--highlighted">nava.hu</span> feldolgozza az oktatási célú
+                     tartalmakat, majd téma szerint csoportosítva eljuttatja az oktatást támogató intézményeknek.</p>
                </div>
             </div>
          </div>
       </div>
 
-   </section>
+      <div class="card card-animation">
+         <div class="card__text">
+            <p>Ezzel egyidejűleg ezen az oldalon szabadon hozzáférhetők a
+               <span class="card__text--highlighted">nava.hu</span>
+               -n található oktatási tartalmak minden felhasználó számára.
+            </p>
+         </div>
+         <div id="pagination-box"></div>
 
+         <div class="table-box">
+            <table class="table table-hover">
+               <thead class="thead header header--3 text-center">
+                  <th>Valami</th>
+                  <th>TV</th>
+                  <th>Rádió</th>
+                  <th>Kapcsolódó anyagok</th>
+               </thead>
+
+               <tbody id="tableBody" class="tbody text-center">
+                  {{!-- <tr>
+                     <td data-label="">1</td>
+                     <td data-label="id">Megnézem</td>
+                     <td data-label="id">Meghallgatom</td>
+                     <td data-label="id">Megnézem</td>
+                  </tr>
+                  <tr>
+                     <td>1</td>
+                     <td>Megnézem</td>
+                     <td>Meghallgatom</td>
+                     <td>Megnézem</td>
+                  </tr>
+                  <tr>
+                     <td>1</td>
+                     <td>Megnézem</td>
+                     <td>Meghallgatom</td>
+                     <td>Megnézem</td>
+                  </tr> --}}
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </section>
 </main>

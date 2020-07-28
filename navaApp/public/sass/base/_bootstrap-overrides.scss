@@ -1,0 +1,34 @@
+@import "./../abstracts/variables";
+
+.container-fluid {
+   padding: 0;
+   margin: 0;
+}
+
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+   border: none !important;
+   transition: all .1s;
+}
+
+th {
+   &:not(:first-child) {
+      width: 20%;
+   }
+}
+
+tr {
+
+   // text-align: center;
+   &:not(:last-child) {
+      border-bottom: 1px solid $default-border-color !important
+   }
+}
+
+td {
+   padding: 1rem .8rem !important;
+}
