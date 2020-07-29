@@ -1,11 +1,19 @@
+@import "./../abstracts/variables";
+
 .table-box {
    width: 100%;
 }
 
 .tr {
-
-   // text-align: center;
    &:not(:last-child) {
       border-bottom: 1px solid $default-border-color !important
+   }
+
+   &>*:first-child {
+      text-align: left;
+   }
+
+   &>* {
+      color: $color-grey;
    }
 }

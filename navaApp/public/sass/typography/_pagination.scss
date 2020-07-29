@@ -1,0 +1,101 @@
+@import "./../abstracts/variables";
+
+.pagination-section {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0;
+
+   &>* {
+      // margin: 0 1rem;
+   }
+
+   &__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      // font-family: $font-family-text;
+      border-radius: 50%;
+      transition: $default-transition-duration;
+      cursor: pointer;
+      color: $color-secondary;
+
+      &:hover {
+         background-color: $color-secondary;
+         color: $color-white;
+      }
+
+      &--selected {
+         background-color: $color-secondary;
+         color: $color-white;
+      }
+   }
+
+   &__number {
+      color: currentColor;
+   }
+
+   &__input {
+      width: 4rem;
+      border-radius: 1.5rem;
+      border: 1px solid $default-border-color;
+      text-align: center;
+      color: $color-secondary;
+      font-family: $font-family-text;
+      font-weight: bolder;
+      padding: .1rem 0;
+   }
+
+   &__label {
+      margin-left: .2rem;
+   }
+
+   /** ----- Hide arrows ----- */
+   input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+   }
+
+   input[type=number] {
+      -moz-appearance: textfield;
+   }
+
+   ::-webkit-input-placeholder {
+      font-family: $font-family-text;
+      font-weight: normal;
+      color: $color-grey-light-1;
+   }
+
+
+   ::-moz-placeholder {
+      font-family: $font-family-text;
+      font-weight: normal;
+      color: $color-grey-light-1;
+   }
+
+
+   :-ms-input-placeholder {
+      font-family: $font-family-text;
+      font-weight: normal;
+      color: $color-grey-light-1;
+   }
+
+
+   ::-ms-input-placeholder {
+      font-family: $font-family-text;
+      font-weight: normal;
+      color: $color-grey-light-1;
+   }
+
+
+   ::placeholder {
+      font-family: $font-family-text;
+      font-weight: normal;
+      color: $color-grey-light-1;
+   }
+}

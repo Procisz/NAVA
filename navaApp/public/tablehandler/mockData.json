@@ -1,62 +1,902 @@
 [
   {
+    "subject": "Biológia és egészségtan",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
     "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
     "tvLink": "./sajt",
     "radioLink": "./sajt",
     "relatedStuffs": "./sajt"
   },
   {
-    "subject": "Dráma",
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
     "tvLink": "./sajt",
     "radioLink": "./sajt",
     "relatedStuffs": "./sajt"
   },
   {
-    "subject": "Biosz",
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
     "tvLink": "./sajt",
     "radioLink": "./sajt",
     "relatedStuffs": "./sajt"
   },
   {
-    "subject": "Matek",
+    "subject": "Gazdasági ismeretek",
     "tvLink": "./sajt",
-    "radioLink": "./sajt",
-    "relatedStuffs": "./sajt"
-  },
-  {
-    "subject": "Töri",
-    "tvLink": "./sajt",
-    "radioLink": "./sajt",
+    "radioLink": "",
     "relatedStuffs": "./sajt"
   },
   {
     "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
     "tvLink": "./sajt",
     "radioLink": "./sajt",
     "relatedStuffs": "./sajt"
   },
   {
-    "subject": "Dráma",
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
     "tvLink": "./sajt",
     "radioLink": "./sajt",
     "relatedStuffs": "./sajt"
   },
   {
-    "subject": "Biosz",
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
     "tvLink": "./sajt",
     "radioLink": "./sajt",
     "relatedStuffs": "./sajt"
   },
   {
-    "subject": "Matek",
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
     "tvLink": "./sajt",
     "radioLink": "./sajt",
     "relatedStuffs": "./sajt"
   },
   {
-    "subject": "Töri",
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
     "tvLink": "./sajt",
     "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Biológia és egészségtan",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Dráma és tánc",
+    "tvLink": "",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Ének-zene",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Filozófia",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Fizika",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Földrajz",
+    "tvLink": "./sajt",
+    "radioLink": "./sajt",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Gazdasági ismeretek",
+    "tvLink": "./sajt",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Hittan",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Angol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Francia",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Német",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": ""
+  },
+  {
+    "subject": "Idegen nyelv: Orosz",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Idegen nyelv: Spanyol",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Informatika",
+    "tvLink": "",
+    "radioLink": "",
+    "relatedStuffs": "./sajt"
+  },
+  {
+    "subject": "Irodalom",
+    "tvLink": "./sajt",
+    "radioLink": "",
     "relatedStuffs": "./sajt"
   }
 ]

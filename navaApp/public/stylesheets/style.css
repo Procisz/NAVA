@@ -29,6 +29,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 *,
 *::after,
 *::before {
@@ -81,6 +87,9 @@ button:visited {
 
 li {
   list-style: none; }
+
+input {
+  outline: none; }
 
 .card-animation {
   transition: all 0.2s;
@@ -291,3 +300,73 @@ td {
 
 .tr:not(:last-child) {
   border-bottom: 1px solid #e6e6e6 !important; }
+
+.tr > *:first-child {
+  text-align: left; }
+
+.tr > * {
+  color: #4a4a4a; }
+
+.pagination-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  /** ----- Hide arrows ----- */ }
+  .pagination-section__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #3a465a; }
+    .pagination-section__box:hover {
+      background-color: #3a465a;
+      color: #fff; }
+    .pagination-section__box--selected {
+      background-color: #3a465a;
+      color: #fff; }
+  .pagination-section__number {
+    color: currentColor; }
+  .pagination-section__input {
+    width: 4rem;
+    border-radius: 1.5rem;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    color: #3a465a;
+    font-family: "Mukta", sans-serif;
+    font-weight: bolder;
+    padding: .1rem 0; }
+  .pagination-section__label {
+    margin-left: .2rem; }
+  .pagination-section input::-webkit-outer-spin-button,
+  .pagination-section input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .pagination-section input[type=number] {
+    -moz-appearance: textfield; }
+  .pagination-section ::-webkit-input-placeholder {
+    font-family: "Mukta", sans-serif;
+    font-weight: normal;
+    color: #a8a8a8; }
+  .pagination-section ::-moz-placeholder {
+    font-family: "Mukta", sans-serif;
+    font-weight: normal;
+    color: #a8a8a8; }
+  .pagination-section :-ms-input-placeholder {
+    font-family: "Mukta", sans-serif;
+    font-weight: normal;
+    color: #a8a8a8; }
+  .pagination-section ::-ms-input-placeholder {
+    font-family: "Mukta", sans-serif;
+    font-weight: normal;
+    color: #a8a8a8; }
+  .pagination-section ::placeholder {
+    font-family: "Mukta", sans-serif;
+    font-weight: normal;
+    color: #a8a8a8; }

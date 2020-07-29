@@ -68,39 +68,37 @@
                -n található oktatási tartalmak minden felhasználó számára.
             </p>
          </div>
-         <div id="pagination-box"></div>
+         <div id="pagination-section-1" class="pagination-section">
+            <div class="pagination-section__actions">left</div>
+            <div class="pagination-section__actions">
+               <input class="pagination-section__input" id="input" type="number" placeholder="9">
+               <label class="pagination-section__label" for="input">elem megjelenítése</label>
+            </div>
+         </div>
 
          <div class="table-box">
             <table class="table table-hover">
                <thead class="thead header header--3 text-center">
-                  <th>Valami</th>
+                  <th>Tantárgy</th>
                   <th>TV</th>
                   <th>Rádió</th>
                   <th>Kapcsolódó anyagok</th>
                </thead>
 
                <tbody id="tableBody" class="tbody text-center">
-                  {{!-- <tr>
-                     <td data-label="">1</td>
-                     <td data-label="id">Megnézem</td>
-                     <td data-label="id">Meghallgatom</td>
-                     <td data-label="id">Megnézem</td>
-                  </tr>
                   <tr>
-                     <td>1</td>
-                     <td>Megnézem</td>
-                     <td>Meghallgatom</td>
-                     <td>Megnézem</td>
+                     <td data-label="subject">
+                        <a href="https://nava.hu/">sdsd</a>
+                     </td>
+                     <td data-label="tvLink">sdsd</td>
+                     <td data-label="radioLink">sdsd</td>
+                     <td data-label="relatedStuffs">sdsd</td>
                   </tr>
-                  <tr>
-                     <td>1</td>
-                     <td>Megnézem</td>
-                     <td>Meghallgatom</td>
-                     <td>Megnézem</td>
-                  </tr> --}}
                </tbody>
             </table>
          </div>
+
+         <div id="pagination-section-1" class="pagination-section"></div>
       </div>
    </section>
 </main>
