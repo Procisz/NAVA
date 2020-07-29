@@ -31,7 +31,6 @@ myInput.addEventListener('keyup', () => {
    myInput.value === 0 || myInput.value === "" ? paginatorHandler.itemsPerPage = paginatorHandler.defaultItemsPerPage : paginatorHandler.itemsPerPage = myInput.value
    // paginatorHandler.itemsPerPage = myInput.value;
    paginatorHandler.slicedData = paginatorHandler.allData.slice(0, paginatorHandler.itemsPerPage);
-   console.log(paginatorHandler);
 
    templateRenderer(myInput.value);
    // async () => {

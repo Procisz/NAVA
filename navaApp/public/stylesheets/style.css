@@ -296,7 +296,10 @@ td {
       font-weight: bold; }
 
 .table-box {
-  width: 100%; }
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto; }
 
 .tr:not(:last-child) {
   border-bottom: 1px solid #e6e6e6 !important; }
