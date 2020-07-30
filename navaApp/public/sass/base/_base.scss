@@ -71,4 +71,57 @@ li {
 
 input {
    outline: none;
+   @include inputFormatter;
+   transition: $default-transition-duration;
+
+   &:focus,
+   &:hover,
+   &:active {
+      border: 1px solid $color-secondary;
+   }
+
+   /** ----- Hide arrows ----- */
+   &::-webkit-outer-spin-button,
+   &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+   }
+
+   &[type=number] {
+      -moz-appearance: textfield;
+   }
+}
+
+::-webkit-input-placeholder {
+   font-family: $font-family-text;
+   font-weight: normal;
+   color: $color-grey-light-1;
+}
+
+
+::-moz-placeholder {
+   font-family: $font-family-text;
+   font-weight: normal;
+   color: $color-grey-light-1;
+}
+
+
+:-ms-input-placeholder {
+   font-family: $font-family-text;
+   font-weight: normal;
+   color: $color-grey-light-1;
+}
+
+
+::-ms-input-placeholder {
+   font-family: $font-family-text;
+   font-weight: normal;
+   color: $color-grey-light-1;
+}
+
+
+::placeholder {
+   font-family: $font-family-text;
+   font-weight: normal;
+   color: $color-grey-light-1;
 }
