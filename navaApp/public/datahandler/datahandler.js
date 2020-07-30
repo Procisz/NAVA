@@ -10,6 +10,7 @@ const dataHandler = {
    numberOfPages: 1,
 };
 
+
 // When page is loading
 window.onload = async () => {
    const response = await fetch('./../datahandler/mockData.json');
@@ -42,6 +43,9 @@ searchInput.addEventListener('keyup', () => {
    })
    dataHandler.filteredData = searchedArray;
    console.log('dataHandler.filteredData: ', dataHandler.filteredData);
+
+   const myInput = document.querySelector("#input");
+   changeItemsNumberInOnePage(myInput.value)
    templateRenderer();
 });
 
@@ -49,10 +53,16 @@ searchInput.addEventListener('keyup', () => {
 // Any changes in page number input
 const myInput = document.querySelector("#input");
 myInput.addEventListener('keyup', () => {
-   myInput.value === 0 || myInput.value === "" ? dataHandler.itemsPerPage = dataHandler.defaultItemsPerPage : dataHandler.itemsPerPage = myInput.value;
-   dataHandler.slicedData = dataHandler.allData.slice(0, dataHandler.itemsPerPage);
-   templateRenderer(myInput.value);
+   let myInputValue = myInput.value;
+   changeItemsNumberInOnePage(myInputValue);
+   templateRenderer(myInputValue);
 });
+
+function changeItemsNumberInOnePage(inputValue) {
+   inputValue === 0 || inputValue === "" ? dataHandler.itemsPerPage = dataHandler.defaultItemsPerPage : dataHandler.itemsPerPage = inputValue;
+   dataHandler.slicedData = dataHandler.allData.slice(0, dataHandler.itemsPerPage);
+   dataHandler.filteredData = dataHandler.filteredData.slice(0, dataHandler.itemsPerPage);
+}
 
 
 // Rendering
