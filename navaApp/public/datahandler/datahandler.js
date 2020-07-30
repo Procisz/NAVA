@@ -36,13 +36,15 @@ const searchInput = document.querySelector('#searchInput');
 searchInput.addEventListener('keyup', () => {
    let searchInputValue = searchInput.value;
    let searchedArray = [];
+
    dataHandler.allData.forEach((result) => {
       if (result.subject.toLowerCase().indexOf(searchInputValue.toLowerCase()) != -1) {
          searchedArray.push(result)
+      } else {
+         // searchedArray.push({ errorMessage: 'Nincs a keresésnek megfelelő találat.' })
       }
    })
    dataHandler.filteredData = searchedArray;
-   console.log('dataHandler.filteredData: ', dataHandler.filteredData);
 
    const myInput = document.querySelector("#input");
    changeItemsNumberInOnePage(myInput.value)
@@ -80,8 +82,13 @@ function templateRenderer(...inputValue) {
 
    // Table part
    let showableData = [];
-   dataHandler.filteredData.length === 0 ? showableData = dataHandler.slicedData : showableData = dataHandler.filteredData;
-   console.log('showableData: ', showableData);
+   if (dataHandler.filteredData.errorMessage) {
+      showableData = dataHandler.filteredData;
+      console.log('showableData1: ', showableData);
+   } else {
+      dataHandler.filteredData.length === 0 ? showableData = dataHandler.slicedData : showableData = dataHandler.filteredData;
+      console.log('showableData2: ', showableData);
+   }
 
    const tableBodyTemplate = `${showableData.reduce((acc, cr) => acc + `<tr class="tr">
                                                             <td data-label="subject">${cr.subject}</td>
