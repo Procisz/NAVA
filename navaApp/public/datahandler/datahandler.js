@@ -5,8 +5,8 @@ const dataHandler = {
    allData: [],
    slicedData: [],
    filteredData: [],
-   itemsPerPage: 9,
-   defaultItemsPerPage: 9,
+   itemsPerPage: 10,
+   defaultItemsPerPage: 10,
    numberOfPages: 1,
 };
 
@@ -41,7 +41,8 @@ searchInput.addEventListener('keyup', () => {
       if (result.subject.toLowerCase().indexOf(searchInputValue.toLowerCase()) != -1) {
          searchedArray.push(result)
       } else {
-         // searchedArray.push({ errorMessage: 'Nincs a keresésnek megfelelő találat.' })
+         // searchedArray = [];
+         // searchedArray.push([{ errorMessage: 'Nincs a keresésnek megfelelő találat.' }]);
       }
    })
    dataHandler.filteredData = searchedArray;
