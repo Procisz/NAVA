@@ -61,7 +61,7 @@ myInput.addEventListener('keyup', () => {
 });
 
 function changeItemsNumberInOnePage(inputValue) {
-   inputValue === 0 || inputValue === "" ? dataHandler.itemsPerPage = dataHandler.defaultItemsPerPage : dataHandler.itemsPerPage = inputValue;
+   inputValue === 0 || inputValue === '' ? dataHandler.itemsPerPage = dataHandler.defaultItemsPerPage : dataHandler.itemsPerPage = inputValue;
    dataHandler.slicedData = dataHandler.allData.slice(0, dataHandler.itemsPerPage);
    dataHandler.filteredData = dataHandler.filteredData.slice(0, dataHandler.itemsPerPage);
 }
@@ -71,14 +71,20 @@ function changeItemsNumberInOnePage(inputValue) {
 function templateRenderer(...inputValue) {
    inputValue[0] ? dataHandler.numberOfPages = Math.ceil(dataHandler.allData.length / dataHandler.defaultItemsPerPage) : dataHandler.numberOfPages = Math.ceil(dataHandler.allData.length / dataHandler.itemsPerPage);
 
+   // Paginations part
    const indexes = Array.from(Array(dataHandler.numberOfPages).keys());
 
    const paginationTemplate = indexes.map((index, i) => `
    <div class="pagination-section__area">   
-      <div class="pagination-section__box ${dataHandler.selectedPageIndex === i ? "pagination-section__box--selected" : ""}" onClick="navigate(${index})">
+      <div class="pagination-section__box ${dataHandler.selectedPageIndex === i ? "pagination-section__box--selected" : ''}" onClick="navigate(${index})">
          <span class="pagination-section__number">${index + 1}</span>
       </div>
    </div>`);
+
+   document.querySelectorAll('.pagination-section').forEach((result) => {
+      result.innerHTML = `${paginationTemplate.join('')}`;
+   });
+
 
    // Table part
    let showableData = [];
@@ -90,17 +96,44 @@ function templateRenderer(...inputValue) {
       console.log('showableData2: ', showableData);
    }
 
-   const tableBodyTemplate = `${showableData.reduce((acc, cr) => acc + `<tr class="tr">
-                                                            <td data-label="subject">${cr.subject}</td>
-                                                            <td data-label="tvLink">${cr.tvLink}</td>
-                                                            <td data-label="radioLink">${cr.radioLink}</td>
-                                                            <td data-label="relatedStuffs">${cr.relatedStuffs}</td>
-                                                         </tr>`, "")}`;
+   // Basic infos for template pieces
+   const defaultTvMessage = 'Megnézem';
+   const defaultRadioMessage = 'Meghallgatom';
+   const defaultRelatedStuffMessage = 'Megnézem';
+   const missingDataIconLink = 'images/sprite.svg#icon-wondering'
+
+   // Scavenging template pieces
+   const missingTvTemplate = `<svg class="table-box__icon--subject">
+                                 <use xlink:href="${missingDataIconLink}"></use>
+                              </svg>`;
+   const missingRadioTemplate = `<svg class="table-box__icon--subject">
+                                 <use xlink:href="${missingDataIconLink}"></use>
+                              </svg>`;
+   const missingRelatedStuffsTemplate = `<svg class="table-box__icon--subject">
+                                 <use xlink:href="${missingDataIconLink}"></use>
+                              </svg>`;
+
+   // The final tbody template
+   const tableBodyTemplate = `
+   ${showableData.reduce((acc, currValue) => acc +
+      `<tr class="table-box__tr">
+         <td data-label="subject">
+            <svg class="table-box__icon--subject">
+               <use xlink:href="${currValue.iconLink}"></use>
+            </svg>${currValue.subject}
+         </td>
+         
+         <td data-label="tvLabel" class="table-box__link">
+         ${currValue.tvLink !== '' ? `<a href="${currValue.tvLink}" target="_blank">${defaultTvMessage}</a>` : missingTvTemplate}
+         </td>
+         
+         <td data-label="radioLabel" class="table-box__link">
+            ${currValue.radioLink !== '' ? `<a href="${currValue.radioLink}" target="_blank">${defaultRadioMessage}</a>` : missingRadioTemplate}
+         </td>
+         
+         <td data-label="relatedStuffsLabel" class="table-box__link">
+         ${currValue.relatedStuffs !== '' ? `<a href="${currValue.relatedStuffs}" target="_blank">${defaultRelatedStuffMessage}</a>` : missingRelatedStuffsTemplate}
+         </td>
+      </tr>`, '')}`;
    document.querySelector('#tableBody').innerHTML = tableBodyTemplate;
-
-
-   // Paginations part
-   document.querySelectorAll('.pagination-section').forEach((result) => {
-      result.innerHTML = `${paginationTemplate.join('')}`;
-   });
 }

@@ -9,7 +9,7 @@
    }
 }
 
-.funfact-box-animation {
+.badge-animation {
    transition: all $default-transition-duration;
    box-shadow: $default-box-shadow;
 
@@ -18,5 +18,3 @@
       box-shadow: $default-box-shadow-hover;
    }
 }
-
-.icon-animation {}

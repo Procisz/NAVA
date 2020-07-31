@@ -44,6 +44,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 *,
 *::after,
 *::before {
@@ -149,10 +152,10 @@ input {
   .card-animation:hover {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02), 0 2px 4px rgba(0, 0, 0, 0.02), 0 4px 8px rgba(0, 0, 0, 0.02), 0 8px 16px rgba(0, 0, 0, 0.02), 0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02); }
 
-.funfact-box-animation {
+.badge-animation {
   transition: all 0.2s;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01), 0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01); }
-  .funfact-box-animation:hover {
+  .badge-animation:hover {
     transform: translateY(-0.1rem) scale(1.01);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02), 0 2px 4px rgba(0, 0, 0, 0.02), 0 4px 8px rgba(0, 0, 0, 0.02), 0 8px 16px rgba(0, 0, 0, 0.02), 0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02); }
 
@@ -199,6 +202,13 @@ tr:not(:last-child) {
 td {
   padding: 1rem .8rem !important; }
 
+p {
+  margin: 0; }
+
+.badge {
+  margin: 0;
+  padding: 0; }
+
 /** ----------------- This is for responsive querys ----------------- 
   * These querys are the same as the flex-layouts breakpoints.
   * Media querys and names.
@@ -222,10 +232,15 @@ td {
     .container {
       padding: 2rem; } }
 
+.navbar,
 .placeholder {
   background-color: #1e2734;
   width: 100%;
   height: 8rem; }
+
+.navbar {
+  position: fixed;
+  z-index: 9999; }
 
 .main-content {
   padding: 4rem;
@@ -241,7 +256,7 @@ td {
 .card {
   width: 100%;
   background-color: #fff;
-  padding: 3rem 6rem;
+  padding: 3rem 20rem;
   font-size: 1.6rem;
   border-radius: 3px;
   border: 1px solid #e6e6e6; }
@@ -252,7 +267,7 @@ td {
     .card {
       padding: 3rem; } }
   .card:not(:last-child) {
-    margin-bottom: 4rem; }
+    margin-bottom: 1rem; }
     @media only screen and (min-width: 160em) {
       .card:not(:last-child) {
         margin-bottom: 0;
@@ -264,17 +279,28 @@ td {
     margin-bottom: 1rem; }
   .card__text {
     color: #4a4a4a;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    margin-bottom: 1rem; }
     .card__text--highlighted {
       cursor: pointer;
-      color: #3a465a;
-      font-weight: bold; }
+      font-weight: bold;
+      color: #3a465a; }
+      .card__text--highlighted:hover {
+        color: #d73317; }
   .card__funfacts {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    padding: 1rem 0; }
+    margin-top: 2rem; }
+  .card__badges-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25rem);
+    grid-gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0; }
 
 .divider__vertical {
   width: 5rem;
@@ -296,71 +322,92 @@ td {
     font-size: 1rem; }
 
 .funfact-box {
-  min-height: 12rem;
-  margin: 0 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  position: relative;
-  border: 1px solid #e6e6e6;
-  border-radius: 7px;
-  overflow: hidden;
-  cursor: default;
-  background-image: linear-gradient(to right, #e83d20, rgba(48, 89, 204, 0.05) 70%); }
+  background-color: rgba(234, 81, 55, 0.1);
+  border: 2px solid rgba(234, 81, 55, 0.2);
+  width: 70%; }
   .funfact-box__side-left {
-    width: 10rem;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .funfact-box__side-right {
-    width: 23rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem; }
   .funfact-box__icon {
-    margin-bottom: 1rem; }
-  .funfact-box__number-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 6rem;
     height: 6rem;
-    border-radius: 50%;
-    padding: 2rem; }
-  .funfact-box__number {
-    font-size: 6rem;
-    color: #3a465a;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); }
+    margin: 0 4rem;
+    fill: #ea5137; }
+  .funfact-box__side-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
   .funfact-box__text {
-    color: #4a4a4a;
-    font-size: 1.6rem;
-    text-align: center;
-    letter-spacing: .1rem;
-    z-index: 2;
-    line-height: 1; }
-    .funfact-box__text--highlighted {
-      cursor: pointer;
-      color: #3a465a;
-      font-weight: bold; }
+    color: #3a465a;
+    margin: 0; }
+    .funfact-box__text:not(:last-child) {
+      margin-bottom: rem; }
 
 .table-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 70%;
   margin: 0 auto; }
-
-.tr:not(:last-child) {
-  border-bottom: 1px solid #e6e6e6 !important; }
-
-.tr > *:first-child {
-  text-align: left; }
-
-.tr > * {
-  color: #4a4a4a; }
+  .table-box th:focus .table-box__thead-text, .table-box th:active .table-box__thead-text, .table-box th:hover .table-box__thead-text {
+    opacity: 1; }
+  .table-box__thead {
+    border-bottom: 1px solid #3a465a !important; }
+  .table-box__thead-text {
+    color: #3a465a;
+    opacity: 0;
+    transition: 0.2s;
+    margin: 0; }
+  .table-box__tr:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6 !important; }
+  .table-box__tr > *:first-child {
+    text-align: left; }
+  .table-box__tr > * {
+    color: #4a4a4a; }
+  .table-box__link a {
+    color: #3a465a;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: 0.1s; }
+    .table-box__link a:hover {
+      color: #d73317; }
+  .table-box__icon--subject {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: #3a465a;
+    margin-right: 1rem; }
+  .table-box__icon--th-icon {
+    width: 4rem;
+    height: 4rem;
+    fill: #3a465a; }
+  .table-box__share {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; }
+  .table-box__inside-box {
+    transition: 0.2s;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    cursor: pointer; }
+    .table-box__inside-box:hover {
+      background-color: #4267B2; }
+      .table-box__inside-box:hover .table-box__share--icon {
+        fill: #fff; }
+      .table-box__inside-box:hover .table-box__share--text {
+        color: #fff; }
+  .table-box__share--text {
+    color: #3a465a;
+    transition: 0.2s; }
+  .table-box__share--icon {
+    transition: 0.2s;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #4267B2; }
 
 /** ----------------- This is for responsive querys ----------------- 
   * These querys are the same as the flex-layouts breakpoints.
@@ -419,3 +466,33 @@ td {
     text-align: center; }
   .filter-section__label {
     margin-left: .2rem; }
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  height: 6rem;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer; }
+  .badge__img {
+    height: 100%;
+    width: 8rem;
+    background-size: cover;
+    background-position: center center;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
+  .badge__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem; }
+  .badge__text {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.6rem;
+    white-space: normal;
+    font-weight: normal; }

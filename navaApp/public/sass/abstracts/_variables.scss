@@ -7,7 +7,7 @@ $default-background-color:rgba(48, 89, 204, .05);
 $default-border-color:#e6e6e6;
 
 $color-primary: #ea5137;
-$color-primary-darken: darken($color-primary, 5%);
+$color-primary-darken: darken($color-primary, 10%);
 $color-primary-lighten: lighten($color-primary, 5%);
 
 $color-secondary: #3a465a;
@@ -21,6 +21,7 @@ $color-grey-light-1: #a8a8a8;
 $color-grey-light-2: #e6e6e6;
 
 $color-white: #fff;
+$color-black: rgb(0, 0, 0);
 
 
 // FONTS

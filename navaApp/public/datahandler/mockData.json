@@ -1,19 +1,20 @@
 [
   {
     "subject": "Biológia és egészségtan",
-    "tvLink": "./sajt",
-    "radioLink": "./sajt",
-    "relatedStuffs": "./sajt"
+    "iconLink": "images/sprite.svg#icon-music",
+    "tvLink": "./other-page",
+    "radioLink": "./other-page",
+    "relatedStuffs": "./other-page"
   },
   {
     "subject": "Dráma és tánc",
     "tvLink": "",
-    "radioLink": "./sajt",
-    "relatedStuffs": "./sajt"
+    "radioLink": "./other-page",
+    "relatedStuffs": "./other-page"
   },
   {
     "subject": "Ének-zene",
-    "tvLink": "./sajt",
+    "tvLink": "./other-page",
     "radioLink": "./sajt",
     "relatedStuffs": "./sajt"
   },

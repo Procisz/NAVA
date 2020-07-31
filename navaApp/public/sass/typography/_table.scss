@@ -2,21 +2,113 @@
 
 .table-box {
    display: flex;
+   flex-direction: column;
    justify-content: center;
    width: 70%;
    margin: 0 auto;
-}
 
-.tr {
-   &:not(:last-child) {
-      border-bottom: 1px solid $default-border-color !important
+   th {
+
+      &:focus,
+      &:active,
+      &:hover {
+         .table-box__thead-text {
+            opacity: 1;
+         }
+      }
    }
 
-   &>*:first-child {
-      text-align: left;
+   &__thead {
+      border-bottom: 1px solid $color-secondary !important;
    }
 
-   &>* {
-      color: $color-grey;
+   &__thead-text {
+      color: $color-secondary;
+      opacity: 0;
+      transition: $default-transition-duration;
+      margin: 0;
+   }
+
+   &__tr {
+
+      &:not(:last-child) {
+         border-bottom: 1px solid $default-border-color !important
+      }
+
+      &>*:first-child {
+         text-align: left;
+      }
+
+      &>* {
+         color: $color-grey;
+      }
+   }
+
+   &__link a {
+      color: $color-secondary;
+      font-weight: 500;
+      font-size: 1.6rem;
+      transition: $default-transition-duration-mouse;
+
+      &:hover {
+         color: $color-primary-darken;
+         // text-shadow: 0 .1rem 2rem rgba($color-black, .2);
+      }
+   }
+
+   &__icon {
+
+      &--subject {
+         width: 1.7rem;
+         height: 1.7rem;
+         fill: $color-secondary;
+         margin-right: 1rem;
+      }
+
+      &--th-icon {
+         width: 4rem;
+         height: 4rem;
+         fill: $color-secondary;
+      }
+   }
+
+   &__share {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+   }
+
+   &__inside-box {
+      transition: $default-transition-duration;
+      border-radius: $default-border-radius;
+      padding: .5rem 1rem;
+      cursor: pointer;
+
+      &:hover {
+         background-color: #4267B2;
+
+         .table-box__share--icon {
+            fill: $color-white;
+         }
+
+         .table-box__share--text {
+            color: $color-white;
+         }
+      }
+   }
+
+   &__share {
+      &--text {
+         color: $color-secondary;
+         transition: $default-transition-duration;
+      }
+
+      &--icon {
+         transition: $default-transition-duration;
+         width: 1.5rem;
+         height: 1.5rem;
+         fill: #4267B2;
+      }
    }
 }

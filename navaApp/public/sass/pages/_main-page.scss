@@ -17,10 +17,16 @@
    }
 }
 
+.navbar,
 .placeholder {
    background-color: #1e2734;
    width: 100%;
    height: 8rem;
+}
+
+.navbar {
+   position: fixed;
+   z-index: 9999;
 }
 
 .main-content {
@@ -39,7 +45,7 @@
 .card {
    width: 100%;
    background-color: $color-white;
-   padding: 3rem 6rem;
+   padding: 3rem 20rem;
    font-size: $default-font-size;
    border-radius: $default-border-radius;
    border: 1px solid $default-border-color;
@@ -53,7 +59,7 @@
    }
 
    &:not(:last-child) {
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
 
       @include responsive(desktopXL) {
          margin-bottom: 0;
@@ -76,23 +82,37 @@
    &__text {
       color: $color-grey;
       font-size: $default-font-size;
-      // margin-bottom: rem;
+      margin-bottom: 1rem;
 
       &--highlighted {
          cursor: pointer;
-         color: $color-secondary;
          font-weight: bold;
+         color: $color-secondary;
+
+         &:hover {
+            color: $color-primary-darken;
+         }
       }
    }
 
    &__funfacts {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       margin-top: 2rem;
-      padding: 1rem 0;
+      // padding: 1rem 0;
    }
 
+   &__badges-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 25rem);
+      grid-gap: 2rem;
+      width: 80%;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 0;
+   }
 }
 
 .divider {

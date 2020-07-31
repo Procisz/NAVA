@@ -1,0 +1,38 @@
+@import "./../abstracts/variables";
+
+.badge {
+   display: flex;
+   flex-direction: row;
+   height: 6rem;
+   width: 100%;
+   border: 1px solid $default-border-color;
+   border-radius: $default-border-radius;
+   overflow: hidden;
+   cursor: pointer;
+
+   &__img {
+      height: 100%;
+      width: 8rem;
+      background-size: cover;
+      background-position: center center;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center;
+      object-position: center;
+   }
+
+   &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 2rem;
+   }
+
+   &__text {
+      display: inline-block;
+      text-align: center;
+      font-size: $default-font-size;
+      white-space: normal;
+      font-weight: normal;
+   }
+}
