@@ -26,27 +26,31 @@
                </div>
 
                <div class="funfact-box__side-right">
-                  <p class="funfact-box__text">A közmédia csatornáján (M5) oktatási célú és felhasználású tartalmakat sugároz.</p>
-                  <p class="funfact-box__text">A mediaklikk.hu ezeket a tartalmakat párhuzamosan azonnal elérhetővé és visszajátszhatóvá teszi.</p>
-                  <p class="funfact-box__text">A nava.hu feldolgozza az oktatási célú tartalmakat, majd téma szerint csoportosítva eljuttatja az
+                  <p class="funfact-box__text">A közmédia csatornáján <span class="funfact-box__text--highlighted">(M5)</span> oktatási célú és
+                     felhasználású
+                     tartalmakat sugároz.</p>
+                  <p class="funfact-box__text">A <span class="funfact-box__text--highlighted">mediaklikk.hu</span> ezeket a tartalmakat párhuzamosan
+                     azonnal elérhetővé és visszajátszhatóvá teszi.</p>
+                  <p class="funfact-box__text">A <span class="funfact-box__text--highlighted">nava.hu</span> feldolgozza az oktatási célú tartalmakat,
+                     majd téma szerint csoportosítva eljuttatja az
                      oktatást támogató
                      intézményeknek.</p>
                </div>
             </div>
          </div>
-      </div>
 
-      <div class="card card-animation">
          <div class="card__text">
             <p>Ezzel egyidejűleg ezen az oldalon szabadon hozzáférhetők a
                <span class="card__text--highlighted">nava.hu</span>
                -n található oktatási tartalmak minden felhasználó számára.
             </p>
          </div>
+      </div>
 
+      <div class="card card-animation">
          <div class="filter-section">
             <div class="filter-section__search">
-               <input id="searchInput" class="filter-section__search" placeholder="Keresés" type="text">
+               <input id="searchInput" placeholder="Keresés" type="text">
             </div>
 
             <div class="filter-section__filter">
@@ -55,46 +59,52 @@
             </div>
          </div>
 
+         {{!-- Table --}}
          <div class="table-box">
             <table class="table table-hover">
                <thead class="table-box__thead header header--3 text-center">
-                  <th>Tantárgy megnevezése</th>
-
-                  <th>
-                     <p class="table-box__thead-text">TV</p>
-                     <svg class="table-box__icon--th-icon">
-                        <use xlink:href="images/sprite.svg#icon-tv"></use>
-                     </svg>
+                  <th class="text-left">
+                     <div class="th-box">
+                        <svg class="table-box__icon--th-icon">
+                           <use xlink:href="images/sprite.svg#icon-graduation-cap"></use>
+                        </svg> Tantárgy megnevezése
+                     </div>
                   </th>
 
                   <th>
-                     <p class="table-box__thead-text">Rádió</p>
-                     <svg class="table-box__icon--th-icon">
-                        <use xlink:href="images/sprite.svg#icon-podcast"></use>
-                     </svg>
+                     <div class="th-box">
+                        <svg class="table-box__icon--th-icon">
+                           <use xlink:href="images/sprite.svg#icon-tv"></use>
+                        </svg> TV
+                     </div>
                   </th>
 
                   <th>
-                     <p class="table-box__thead-text">Kapcsolódó anyagok</p>
-                     <svg class="table-box__icon--th-icon">
-                        <use xlink:href="images/sprite.svg#icon-podcast"></use>
-                     </svg>
+                     <div class="th-box">
+                        <svg class="table-box__icon--th-icon">
+                           <use xlink:href="images/sprite.svg#icon-podcast"></use>
+                        </svg> Rádió
+                     </div>
+                  </th>
+
+                  <th>
+                     <div class="th-box">
+                        <svg class="table-box__icon--th-icon">
+                           <use xlink:href="images/sprite.svg#icon-books"></use>
+                        </svg>
+                        <span>Kapcsolódó anyagok</span>
+                     </div>
                   </th>
                </thead>
 
-               <tbody id="tableBody" class="tbody text-center">
-                  <tr>
-                     <td data-label="subject">
-                        <a href="https://nava.hu/">sdsd</a>
-                     </td>
-                     <td data-label="tvLink">sdsd</td>
-                     <td data-label="radioLink">sdsd</td>
-                     <td data-label="relatedStuffs">sdsd</td>
-                  </tr>
-               </tbody>
+               <tbody id="tableBody" class="tbody text-center"></tbody>
             </table>
 
-            <div class="pagination-section"></div>
+            {{!-- Table on mobile only --}}
+            <div id="tableBodyMobile" class="table-mobile">
+            </div>
+
+            <div id="paginationSection" class="pagination-section"></div>
 
             <div class="table-box__share">
                <div class="table-box__inside-box">
@@ -105,6 +115,7 @@
                </div>
             </div>
          </div>
+
       </div>
 
    </section>

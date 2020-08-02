@@ -6,7 +6,28 @@
    flex-direction: row;
    background-color: rgba($color-primary, .1);
    border: 2px solid rgba($color-primary, .2);
-   width: 70%;
+   width: 75%;
+
+   @include responsive(desktopXL) {
+      width: 65%;
+   }
+
+   @include responsive(desktopL) {
+      width: 70%;
+   }
+
+   @include responsive(tab-land) {
+      width: 80%;
+   }
+
+   @include responsive(tab-port) {
+      width: 85%;
+   }
+
+   @include responsive(phone) {
+      width: 90%;
+      flex-direction: column;
+   }
 
    &__side-left {
       display: flex;
@@ -15,10 +36,14 @@
    }
 
    &__icon {
-      width: 6rem;
-      height: 6rem;
+      width: 4rem;
+      height: 4rem;
       margin: 0 4rem 0 2rem;
       fill: $color-primary;
+
+      @include responsive(phone) {
+         margin: 0 0 2rem 0;
+      }
    }
 
    &__side-right {
@@ -30,9 +55,20 @@
    &__text {
       color: $color-secondary;
       margin: 0;
+      transition: $default-transition-duration-mouse;
 
       &:not(:last-child) {
-         margin-bottom: rem;
+         margin-bottom: .5rem;
+      }
+
+      &--highlighted {
+         cursor: pointer;
+         font-weight: bold;
+         color: $color-secondary;
+
+         &:hover {
+            color: $color-primary-darken;
+         }
       }
    }
 }

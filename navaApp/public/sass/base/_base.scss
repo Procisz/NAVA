@@ -63,6 +63,14 @@ button,
 button:link,
 button:visited {
    text-decoration: none;
+   transition: $default-transition-duration-mouse;
+   cursor: pointer;
+   font-weight: bold;
+   color: $color-secondary;
+
+   &:hover {
+      color: $color-primary-darken;
+   }
 }
 
 li {

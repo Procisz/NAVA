@@ -16,8 +16,8 @@ td {
 }
 
 th {
-   &:not(:first-child) {
-      width: 20%;
+   &:first-child {
+      // width: 40rem;
    }
 }
 

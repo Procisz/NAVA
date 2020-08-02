@@ -4,8 +4,34 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   width: 70%;
+   width: 75%;
    margin: 0 auto;
+
+   @include responsive(desktopXL) {
+      width: 65%;
+   }
+
+   @include responsive(desktopL) {
+      width: 70%;
+   }
+
+   @include responsive(tab-land) {
+      width: 80%;
+   }
+
+   @include responsive(tab-port) {
+      width: 85%;
+   }
+
+   @include responsive(tab-port) {
+      width: 100%;
+   }
+
+   .table {
+      @include responsive(phone) {
+         display: none;
+      }
+   }
 
    th {
 
@@ -16,6 +42,14 @@
             opacity: 1;
          }
       }
+   }
+
+   &__th-box {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
    }
 
    &__thead {
@@ -66,9 +100,10 @@
       }
 
       &--th-icon {
-         width: 4rem;
-         height: 4rem;
+         width: 2rem;
+         height: 2rem;
          fill: $color-secondary;
+         margin-right: .5rem;
       }
    }
 
@@ -109,6 +144,68 @@
          width: 1.5rem;
          height: 1.5rem;
          fill: #4267B2;
+      }
+   }
+}
+
+/** ----- Only mobile devices ----- */
+.table-mobile {
+   display: none;
+
+   @include responsive(phone) {
+      display: flex !important;
+      flex-direction: column;
+   }
+
+   &__row {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      border-radius: $default-border-radius;
+      box-shadow: $default-box-shadow;
+
+      &:not(:last-child) {
+         margin-bottom: 1rem;
+         border: 1px solid $default-border-color;
+      }
+
+      &:focus,
+      &:active {
+         box-shadow: $default-box-shadow-hover;
+      }
+   }
+
+   &__data-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &:not(:last-child) {
+         margin-bottom: 1rem;
+      }
+   }
+
+   &__title {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      margin-right: 1rem;
+   }
+
+   &__icon {
+      width: 1.7rem;
+      height: 1.7rem;
+      fill: $color-secondary;
+      margin-right: 1rem;
+   }
+
+   &__data {
+
+      &,
+      &>* {
+         text-align: right;
+         font-weight: 400 !important;
       }
    }
 }

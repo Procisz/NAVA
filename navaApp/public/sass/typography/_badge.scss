@@ -23,6 +23,7 @@
 
    &__content {
       display: flex;
+      flex-grow: 1;
       justify-content: center;
       align-items: center;
       padding: 1rem 2rem;
@@ -34,5 +35,6 @@
       font-size: $default-font-size;
       white-space: normal;
       font-weight: normal;
+      margin: 0 auto;
    }
 }

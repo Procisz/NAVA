@@ -82,9 +82,13 @@ function templateRenderer(...inputValue) {
       </div>
    </div>`);
 
-   document.querySelectorAll('.pagination-section').forEach((result) => {
+   document.querySelectorAll('#paginationSection').forEach((result) => {
       result.innerHTML = `${paginationTemplate.join('')}`;
    });
+
+   // document.querySelectorAll('#paginationSectionMobile').forEach((result) => {
+   //    result.innerHTML = `${paginationTemplate.join('')}`;
+   // });
 
 
    // Table part
@@ -101,28 +105,27 @@ function templateRenderer(...inputValue) {
    const defaultTvMessage = 'Megnézem';
    const defaultRadioMessage = 'Meghallgatom';
    const defaultRelatedStuffMessage = 'Megnézem';
-   const missingDataIconLink = 'images/sprite.svg#icon-wondering'
+   // const missingDataIconLink = 'images/sprite.svg#icon-wondering'
 
    // Scavenging template pieces
-   const missingTvTemplate = `<svg class="table-box__icon--subject">
-                                 <use xlink:href="${missingDataIconLink}"></use>
-                              </svg>`;
-   const missingRadioTemplate = `<svg class="table-box__icon--subject">
-                                 <use xlink:href="${missingDataIconLink}"></use>
-                              </svg>`;
-   const missingRelatedStuffsTemplate = `<svg class="table-box__icon--subject">
-                                 <use xlink:href="${missingDataIconLink}"></use>
-                              </svg>`;
+   const missingTvTemplate = '-';
+   const missingRadioTemplate = '-';
+   const missingRelatedStuffsTemplate = '-';
+   // const missingTvTemplate = `<svg class="table-box__icon--subject">
+   //                               <use xlink:href="${missingDataIconLink}"></use>
+   //                            </svg>`;
+   // const missingRadioTemplate = `<svg class="table-box__icon--subject">
+   //                               <use xlink:href="${missingDataIconLink}"></use>
+   //                            </svg>`;
+   // const missingRelatedStuffsTemplate = `<svg class="table-box__icon--subject">
+   //                               <use xlink:href="${missingDataIconLink}"></use>
+   //                            </svg>`;
 
    // The final tbody template
    const tableBodyTemplate = `
    ${showableData.reduce((acc, currValue) => acc +
       `<tr class="table-box__tr">
-         <td data-label="subject">
-            <svg class="table-box__icon--subject">
-               <use xlink:href="${currValue.iconLink}"></use>
-            </svg>${currValue.subject}
-         </td>
+         <td data-label="subject">${currValue.subject}</td>
          
          <td data-label="tvLabel" class="table-box__link">
          ${currValue.tvLink !== '' ? `<a href="${currValue.tvLink}" target="_blank">${defaultTvMessage}</a>` : missingTvTemplate}
@@ -136,5 +139,46 @@ function templateRenderer(...inputValue) {
          ${currValue.relatedStuffs !== '' ? `<a href="${currValue.relatedStuffs}" target="_blank">${defaultRelatedStuffMessage}</a>` : missingRelatedStuffsTemplate}
          </td>
       </tr>`, '')}`;
+
+   const tableBodyTemplateMobile =
+      `${showableData.reduce((acc, currValue) => acc +
+         `<div class="table-mobile__row">
+            <div class="table-mobile__data-box">
+               <div class="table-mobile__title">
+                  <svg class="table-mobile__icon">
+                     <use xlink:href="images/sprite.svg#icon-graduation-cap"></use>
+                  </svg>Tantárgy megnevezése
+               </div>
+               <span class="table-mobile__data">${currValue.subject}</span>
+            </div>
+
+            <div class="table-mobile__data-box">
+               <div class="table-mobile__title">
+                  <svg class="table-mobile__icon">
+                     <use xlink:href="images/sprite.svg#icon-tv"></use>
+                  </svg>TV
+               </div>
+               <span class="table-mobile__data">${currValue.tvLink !== '' ? `<a href="${currValue.tvLink}" target="_blank">${defaultTvMessage}</a>` : missingTvTemplate}</span>
+            </div>
+
+            <div class="table-mobile__data-box">
+               <div class="table-mobile__title">
+                  <svg class="table-mobile__icon">
+                     <use xlink:href="images/sprite.svg#icon-podcast"></use>
+                  </svg>Rádió
+               </div>
+               <span class="table-mobile__data">${currValue.radioLink !== '' ? `<a href="${currValue.radioLink}" target="_blank">${defaultTvMessage}</a>` : missingTvTemplate}</span>
+            </div>
+
+            <div class="table-mobile__data-box">
+               <div class="table-mobile__title">
+                  <svg class="table-mobile__icon">
+                     <use xlink:href="images/sprite.svg#icon-books"></use>
+                  </svg>Kapcsolódó anyagok
+               </div>
+               <span class="table-mobile__data">${currValue.relatedStuffs !== '' ? `<a href="${currValue.relatedStuffs}" target="_blank">${defaultTvMessage}</a>` : missingTvTemplate}</span>
+            </div>
+         </div>`, '')}`;
    document.querySelector('#tableBody').innerHTML = tableBodyTemplate;
+   document.querySelector('#tableBodyMobile').innerHTML = tableBodyTemplateMobile;
 }
