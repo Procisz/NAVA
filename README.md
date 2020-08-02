@@ -17,3 +17,7 @@
 
 - Search function: Search by typing is available. Unfortunately, a known bug was not fixed due to lack of time.
 - Pagination function: The number of items to show can be changed to any numeric value.
+
+## Data
+
+- A json file was used to provide all of the data displayed on the table
