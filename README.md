@@ -15,8 +15,9 @@
 
 ## Javascript
 
-- Search function: Search by typing is available. Unfortunately, a known bug was not fixed due to lack of time.
-- Pagination function: The number of items to show can be changed to any numeric value.
+- Rendering function: the table is dinamically rendered.
+- Search function: search by typing is available. Unfortunately, a known bug was not fixed due to lack of time.
+- Pagination function: the number of items to show can be changed to any numeric value.
 
 ## Data
 
